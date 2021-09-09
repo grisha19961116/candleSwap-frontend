@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CandleSwap View</title>
+    <link rel="stylesheet" href="index.css" />
     <!-- Fix for iOS Safari zooming bug -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -18,6 +19,23 @@
     <script type="module" src="src/main.js"></script>
 </head>
 <body style="margin:0px;">
+    <div class="ratesWrapper" id="ratesWrapper">
+        <div class="overlayForm--disable" id="overlayForm">No potions</div>
+        <form class="ratesLeftSide" data-left="ratesLeftSide" id='ratesLeftSide'>
+            <input class="ratesLeftSide__input" data-left="ratesLeftSide" id='ratesLeftSideInput' type="text" placeholder="Enter token name / address..."> </input>
+            <button class="ratesLeftSide__btn" data-left="ratesLeftSide"  type="button">
+                <svg class="ratesLeftSide__btn-svg" id='arrowDown' data-left="ratesLeftSide" >
+                    <use data-left="ratesLeftSide" href="./down-arrow-of-angle-svgrepo-com.svg#arrowDown"></use>
+                </svg>
+            </button>
+        </form>
+            <button class="ratesRightSide" id="ratesRightSide" data-left="ratesRightSide" type="button">
+                <img data-left="ratesRightSide"  width="24px" height="21px" src="./notebook.png">
+                <div class="ratesRightSideOverlay" data-left="ratesRightSide"></div>
+            </button>
+            <div class="overlayFormBtn--disable" data-left="ratesRightSide" id="overlayFormBtn">Go</div>
+    </div>
 <div id="tv_chart_container"></div>
 </body>
+<script src="./input.js" type="module"></script>
 </html>

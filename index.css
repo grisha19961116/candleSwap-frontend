@@ -1,0 +1,154 @@
+.ratesWrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    background-color: rgb(30, 31, 31); 
+}
+
+
+
+.overlayForm--disable{
+    height: 0;
+    width: 0;
+}
+
+.overlayForm{
+    position: absolute;
+    content: '';
+    top: 70px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(139, 137, 137);
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+
+
+.overlayFormBtn--disable{
+    height: 0;
+    width: 0;
+}
+
+.overlayFormBtn{
+    position: absolute;
+    z-index: 10;
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    top: 20px;
+    left: 230px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(21, 228, 38);
+    cursor: pointer;
+    color: rgb(88, 86, 86);
+
+}
+
+.ratesLeftSide{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 250px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ratesLeftSide--active{
+    outline: 4px solid rgb(71, 126, 245);
+}
+
+
+
+.ratesRightSide{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.ratesRightSide--active{
+    outline: 4px solid rgb(111, 111, 112);
+}
+
+
+
+.ratesLeftSide__input{
+    color: rgb(75, 75, 75);
+    position: relative;
+    height: 40px;
+    width: 190px;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+
+.ratesLeftSide__input::placeholder{
+  color: rgb(75, 75, 75);
+}
+
+.ratesLeftSide__btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.ratesLeftSide__btn-svg {
+    fill: rgb(145, 144, 144);
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.ratesLeftSide__btn-svg--active{
+    fill: rgb(41, 40, 40);
+}
+
+
+
+
+
+
+.ratesLeftSide__btn::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 26px;
+    left: 0;
+    top: 7px;
+    background: rgb(90, 89, 89);
+
+}
+
